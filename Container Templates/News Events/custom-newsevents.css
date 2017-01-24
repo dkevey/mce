@@ -1,0 +1,6 @@
+.content-template .select-thumb {width:400px; height:130px;}
+
+/* add the thumbnails - if the sizes are different, change them here */
+.select-thumb.selected-block-listing {background-image: url(/?a=5670:v2); background-size: 400px 130px;}
+.select-thumb.selected-news-listing {background-image: url(/?a=5672:v2); background-size: 360px 130px; width: 360px;}
+.select-thumb.selected-news-listing-dense {background-image: url(/?a=5673:v2); background-size: 400px 130px;}

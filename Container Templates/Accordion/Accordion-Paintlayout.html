@@ -1,0 +1,96 @@
+<!-- MCE: Accordion content template version %globals_asset_version:783% -->
+%begin_asset_metadata_authoring_type^eq:folder%
+<!-- Root node: %asset_metadata_root_nodes% -->
+<div class="ct-accordion__folder_%asset_metadata_type%"> 
+%else_asset_metadata_authoring_type^eq:folder%
+<div class="ct-accordion__wysiwyg_%asset_metadata_type%">
+%end_asset_metadata_authoring_type^eq:folder%
+
+%begin_asset_metadata_authoring_type^eq:wysiwyg%
+<ul class="accordion" %asset_metadata_type^eq:single_block_open:data-single-focus="":%>
+  <li>
+    <span class="accordion__title">%asset_metadata_section_1_heading%</span>
+    <div class="accordion__hidden">
+      %asset_metadata_section_1_content%
+    </div>
+  </li>
+  %begin_asset_metadata_num_fields^gte:2%
+  <li>
+    <span class="accordion__title">%asset_metadata_section_2_heading%</span>
+    <div class="accordion__hidden">
+      %asset_metadata_section_2_content%
+    </div>
+  </li>
+  %end_asset_metadata_num_fields^gte:2%
+  %begin_asset_metadata_num_fields^gte:3%
+  <li>
+    <span class="accordion__title">%asset_metadata_section_3_heading%</span>
+    <div class="accordion__hidden">
+      %asset_metadata_section_3_content%
+    </div>
+  </li>
+  %end_asset_metadata_num_fields^gte:3%
+  %begin_asset_metadata_num_fields^gte:4%
+  <li>
+    <span class="accordion__title">%asset_metadata_section_4_heading%</span>
+    <div class="accordion__hidden">
+      %asset_metadata_section_4_content%
+    </div>
+  </li>
+  %end_asset_metadata_num_fields^gte:4%
+  %begin_asset_metadata_num_fields^gte:5%
+  <li>
+    <span class="accordion__title">%asset_metadata_section_5_heading%</span>
+    <div class="accordion__hidden">
+      %asset_metadata_section_5_content%
+    </div>
+  </li>
+  %end_asset_metadata_num_fields^gte:5%
+  %begin_asset_metadata_num_fields^gte:6%
+  <li>
+    <span class="accordion__title">%asset_metadata_section_6_heading%</span>
+    <div class="accordion__hidden">
+      %asset_metadata_section_6_content%
+    </div>
+  </li>
+  %end_asset_metadata_num_fields^gte:6%
+  %begin_asset_metadata_num_fields^gte:7%
+  <li>
+    <span class="accordion__title">%asset_metadata_section_7_heading%</span>
+    <div class="accordion__hidden">
+      %asset_metadata_section_7_content%
+    </div>
+  </li>
+  %end_asset_metadata_num_fields^gte:7%
+  %begin_asset_metadata_num_fields^gte:8%
+  <li>
+    <span class="accordion__title">%asset_metadata_section_8_heading%</span>
+    <div class="accordion__hidden">
+      %asset_metadata_section_8_content%
+    </div>
+  </li>
+  %end_asset_metadata_num_fields^gte:8%
+  %begin_asset_metadata_num_fields^gte:9%
+  <li>
+    <span class="accordion__title">%asset_metadata_section_9_heading%</span>
+    <div class="accordion__hidden">
+      %asset_metadata_section_9_content%
+    </div>
+  </li>
+  %end_asset_metadata_num_fields^gte:9%
+  %begin_asset_metadata_num_fields^gte:10%
+  <li>
+    <span class="accordion__title">%asset_metadata_section_10_heading%</span>
+    <div class="accordion__hidden">
+      %asset_metadata_section_10_content%
+    </div>
+  </li>
+  %end_asset_metadata_num_fields^gte:10%
+</ul>
+%end_asset_metadata_authoring_type^eq:wysiwyg%
+
+[insert asset listing]
+
+%asset_contents%
+
+</div>

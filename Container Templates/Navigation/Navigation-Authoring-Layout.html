@@ -1,0 +1,38 @@
+<!--
+MCE Container Templates - Navigation
+@authors dcook@squiz.net, dkevey@unimelb.edu.au
+@requires Edit+ 5.3 or Matrix 5.3 Admin Interface
+@imports jQuery 1.12 if not available
+@imports jQuery.ui 1.12 if not available
+ -->
+<script>
+    // Include jQuery and jQueryUI if not already loaded (Admin interface does not include them)
+    window.jQuery || document.write('<script src="//code.jquery.com/jquery-1.12.0.min.js"></'+'script>');
+    window.jQuery && window.jQuery.ui || document.write('<script src="//code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js"></'+'script>');
+</script>
+
+<!--@@ Global CSS @@-->
+<link rel="stylesheet" type="text/css" id="contentTemplates.css" href="./?a=6872?v=%globals_asset_version:6782%" />
+
+<!--@@ Custom CSS @@-->
+<link rel="stylesheet" type="text/css" id="custom-navigation.css" href="./?a=7047?v=%globals_asset_version:7047%" />
+
+<div class="content-template-navigation">
+    <div class="content-template">
+        <h3>%globals_asset_name:843%</h3>
+        <p class="guide">This is the main navigation for the page that should be used within the first couple of levels only within a site. For help using this template read the <a href="./?a=7016">navigation help guide</a>.</p>
+         <p class="alert-info">Please limit to only using this content template once on a page. </p>
+        <!-- Metadata fields entry -->
+        %metadata-F_metadata_values%
+    </div>
+</div>
+
+<!--@@ Global JS @@-->
+<script id="ContentTemplates.js">
+    %globals_asset_file_contents:781%
+</script>
+
+<!--@@ Custom JS @@-->
+<script id="custom-navigation.js">
+    %globals_asset_file_contents:890%
+</script>

@@ -1,0 +1,109 @@
+<!-- MCE: Header content template version %globals_asset_version:729% -->
+%begin_asset_metadata_template^contains:article%
+    <article class="ct-header__%asset_metadata_template_key%">
+      <header
+        %begin_asset_metadata_image% 
+            style="background-image: url(%asset_metadata_image^as_asset:asset_url%);"
+        %end_asset_metadata_image%
+        >
+        <div 
+            %asset_metadata_template^eq:article-bottom-align^replace_keywords:eq:1:class="bottom-align blurred"%
+            %asset_metadata_template^eq:article-mid-align^replace_keywords:eq:1:class="mid-align blurred"%
+        >
+            %begin_asset_metadata_title%
+                %asset_metadata_title^tag:h1%
+            %else_asset_metadata_title%
+                %asset_parent^as_asset:asset_parent^as_asset:asset_name^tag:h1%
+            %end_asset_metadata_title%
+
+            %asset_metadata_subline^tagif:p%
+            %begin_asset_metadata_template^eq:article-mid-align%
+                %begin_asset_metadata_author_name%
+                    <p class="author"><em>By %asset_metadata_author_name%</em>
+                        %begin_asset_metadata_author_location%
+                            <br />%asset_metadata_author_location%
+                        %end_asset_metadata_author_location%
+                    </p>
+                %end_asset_metadata_author_name%
+            %end_asset_metadata_template^eq:article-mid-align%
+            </div>
+      </header>
+    </article>
+%else_asset_metadata_template^contains:article%
+
+    %begin_asset_metadata_template^contains:header-blue%
+    <header class="ct-header__%asset_metadata_template_key%">
+           %begin_asset_metadata_title%
+                %asset_metadata_title^tag:h1%
+            %else_asset_metadata_title%
+                %asset_parent^as_asset:asset_parent^as_asset:asset_name^tag:h1%
+            %end_asset_metadata_title%
+
+         %asset_metadata_subline^tagif:p%
+    </header>
+    %else_asset_metadata_template^contains:header-blue%
+    <header class="ct-header__%asset_metadata_template_key%
+        %asset_metadata_template^contains:header-image^replace_keywords:eq:1:image%
+        %asset_metadata_template^contains:header-banner^replace_keywords:eq:1:banner%"
+        %begin_asset_metadata_image% 
+            style="background-image: url(%asset_metadata_image^as_asset:asset_url%);"
+        %end_asset_metadata_image%
+     >
+              <div
+                %asset_metadata_template^eq:header-image-mid-align^replace_keywords:eq:1:class="mid-align"%
+                %asset_metadata_template^eq:header-image-mid-align-enhanced^replace_keywords:eq:1:class="mid-align blurred"%
+                %asset_metadata_template^eq:header-image-bottom-align^replace_keywords:eq:1:class="bottom-align"%
+                %asset_metadata_template^eq:header-image-bottom-align-flat^replace_keywords:eq:1:class="bottom-align-flat"%
+                %asset_metadata_template^eq:header-image-box^replace_keywords:eq:1:class="box"%
+                %asset_metadata_template^eq:header-banner-simple^replace_keywords:eq:1:class="mid-align"%
+                %asset_metadata_template^eq:header-banner-course^replace_keywords:eq:1:class="bottom-align-flat"%
+                %asset_metadata_template^eq:header-image-course^replace_keywords:eq:1:class="bottom-align-flat"%
+              >
+             %begin_asset_metadata_template^contains:course%
+                <form class="course-select">
+                    <div class="left">
+                        %begin_asset_metadata_title%
+                            %asset_metadata_title^tag:h2%
+                        %else_asset_metadata_title%
+                            %asset_parent^as_asset:asset_parent^as_asset:asset_name^tag:h2%
+                        %end_asset_metadata_title%
+
+                        %asset_metadata_subline^tagif:p%
+                    </div>
+                </form>
+             %else_asset_metadata_template^contains:course%
+                %begin_asset_metadata_title%
+                    %asset_metadata_title^tag:h1%
+                %else_asset_metadata_title%
+                    %asset_parent^as_asset:asset_parent^as_asset:asset_name^tag:h1%
+                %end_asset_metadata_title%
+
+                %asset_metadata_subline^tagif:p%
+             %end_asset_metadata_template^contains:course%
+             %begin_asset_metadata_template^contains:header-image-mid%
+                %begin_asset_metadata_button_link%
+                    <p><a href="%asset_metadata_button_link%" class="button-hero-inverse">
+                        %begin_asset_metadata_button_text%
+                            %asset_metadata_button_text%
+                        %else_asset_metadata_button_text%
+                            Read more 
+                        %end_asset_metadata_button_text% </a></p>
+                %end_asset_metadata_button_link%
+             %else_asset_metadata_template^contains:header-image-mid%
+                %begin_asset_metadata_template^eq:header-banner-simple%
+                    %begin_asset_metadata_button_link%
+                    <p><a href="%asset_metadata_button_link%" class="button-hero-inverse">
+                        %begin_asset_metadata_button_text%
+                            %asset_metadata_button_text%
+                        %else_asset_metadata_button_text%
+                            Read more
+                        %end_asset_metadata_button_text% </a></p>
+                    %end_asset_metadata_button_link%
+                %else_asset_metadata_template^eq:header-banner-simple%
+                %end_asset_metadata_template^eq:header-banner-simple%
+             %end_asset_metadata_template^contains:header-image-mid%
+      </div>
+    </header>
+    %end_asset_metadata_template^contains:header-blue%
+
+%end_asset_metadata_template^contains:article%

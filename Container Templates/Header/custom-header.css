@@ -1,0 +1,15 @@
+/* generic edit+ overrides */
+.content-template .select-thumb {width:470px; height:110px;}
+
+/* add the thumbnails - if the sizes are different, change them here */
+.select-thumb.selected-header-blue {background-image: url(/?a=3752:v2); background-size: 470px 110px;}
+.select-thumb.selected-header-image-mid-align {background-image: url(/?a=758:v2);background-size: 470px 110px;}
+.select-thumb.selected-header-image-mid-align-enhanced {background-image: url(/?a=759:v2); background-size: 470px 110px;}
+.select-thumb.selected-header-image-bottom-align {background-image: url(/?a=760:v2); background-size: 470px 110px;}
+.select-thumb.selected-header-image-bottom-align-flat {background-image: url(/?a=761:v2); background-size: 470px 110px;}
+.select-thumb.selected-header-image-box {background-image: url(/?a=762:v2); background-size: 470px 180px; height: 180px;}
+.select-thumb.selected-header-banner-simple {background-image: url(/?a=764:v2); background-size: 470px 300px; height: 300px;}
+.select-thumb.selected-header-banner-course {background-image: url(/?a=765:v2); background-size: 470px 290px; height: 290px;}
+.select-thumb.selected-header-image-course {background-image: url(/?a=766:v2); background-size: 470px 110px;}
+.select-thumb.selected-article-bottom-align {background-image: url(/?a=767:v2); background-size: 470px 290px; height: 290px;}
+.select-thumb.selected-article-mid-align {background-image: url(/?a=768:v2);background-size: 470px 290px; height: 290px;}

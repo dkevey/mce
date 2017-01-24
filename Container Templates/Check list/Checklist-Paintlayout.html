@@ -1,0 +1,52 @@
+<!-- MCE: Check List content template version %globals_asset_version:6956% -->
+<div class="ct-checklist"> 
+<form>
+  <fieldset>
+    <ul class="checklist"  %begin_asset_metadata_unlock_checklist^eq:yes% data-unlock-target="continue" %end_asset_metadata_unlock_checklist^eq:yes%>
+    <li %begin_asset_metadata_CheckFirstItem^:eq:yes:% class="on" %end_asset_metadata_CheckFirstItem^:eq:yes:%><input %begin_asset_metadata_CheckFirstItem^:eq:yes:% checked="checked" %else_asset_metadata_CheckFirstItem^:eq:yes:% class="checkbox" %end_asset_metadata_CheckFirstItem^:eq:yes:%  id="c0" type="checkbox" /><label for="c1"><span>%asset_metadata_section_1_content%</span></label></li>
+      %begin_asset_metadata_num_fields^gte:2%
+        <li><input class="checkbox" id="c2" type="checkbox" /><label for="c2"><span>%asset_metadata_section_2_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:2%
+      %begin_asset_metadata_num_fields^gte:3%
+        <li><input class="checkbox" id="c3" type="checkbox" /><label for="c3"><span>%asset_metadata_section_3_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:3%
+      %begin_asset_metadata_num_fields^gte:4%
+        <li><input class="checkbox" id="c4" type="checkbox" /><label for="c4"><span>%asset_metadata_section_4_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:4%
+      %begin_asset_metadata_num_fields^gte:5%
+        <li><input class="checkbox" id="c5" type="checkbox" /><label for="c5"><span>%asset_metadata_section_5_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:5%
+      %begin_asset_metadata_num_fields^gte:6%
+        <li><input class="checkbox" id="c6" type="checkbox" /><label for="c6"><span>%asset_metadata_section_6_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:6%
+      %begin_asset_metadata_num_fields^gte:7%
+        <li><input class="checkbox" id="c7" type="checkbox" /><label for="c7"><span>%asset_metadata_section_7_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:7%
+      %begin_asset_metadata_num_fields^gte:8%
+        <li><input class="checkbox" id="c8" type="checkbox" /><label for="c8"><span>%asset_metadata_section_8_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:8%
+      %begin_asset_metadata_num_fields^gte:9%
+        <li><input class="checkbox" id="c9" type="checkbox" /><label for="c9"><span>%asset_metadata_section_9_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:9%
+      %begin_asset_metadata_num_fields^gte:10%
+        <li><input class="checkbox" id="c10" type="checkbox" /><label for="c10"><span>%asset_metadata_section_10_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:10%
+      %begin_asset_metadata_num_fields^gte:11%
+        <li><input class="checkbox" id="c11" type="checkbox" /><label for="c11"><span>%asset_metadata_section_11_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:11%
+      %begin_asset_metadata_num_fields^gte:12%
+        <li><input class="checkbox" id="c12" type="checkbox" /><label for="c12"><span>%asset_metadata_section_12_content%</span></label></li>
+      %end_asset_metadata_num_fields^gte:12%
+    </ul>
+  </fieldset>
+  %begin_asset_metadata_unlock_checklist^eq:yes%
+   <section>
+       %begin_asset_metadata_button_link%
+        <p class="center">
+            <a class="button" href="%asset_metadata_button_link%" id="continue">%asset_metadata_button_text^empty:Continue%</a>
+        </p>
+        %end_asset_metadata_button_link%
+  </section>
+  %end_asset_metadata_unlock_checklist^eq:yes%
+</form>
+</div>

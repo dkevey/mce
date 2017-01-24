@@ -1,0 +1,64 @@
+%begin_nested_get_list_template_value^contains:Nav%
+    %begin_nested_get_list_template_key^eq:nav-with-text%
+        <li>
+            <a href="%link_url%" rel="%asset_attribute_link_relation%">%asset_name%</a>
+        </li>
+    %end_nested_get_list_template_key^eq:nav-with-text%
+    %begin_nested_get_list_template_key^eq:nav-linked-header%
+        <li>
+            <h3><a href="%link_url%" rel="%asset_attribute_link_relation%">%asset_name%</a></h3>
+            %asset_contents_paint_1103%
+        </li>
+    %end_nested_get_list_template_key^eq:nav-linked-header%
+    %begin_nested_get_list_template_key^eq:nav-unlinked-header%
+        <li>
+            <h3>%asset_name%</h3>
+            %asset_contents_paint_1103%
+        </li>
+    %end_nested_get_list_template_key^eq:nav-unlinked-header%
+    %begin_nested_get_list_template_key^eq:nav-block-with-text%
+        <li>
+            <h3><a href="%link_url%" rel="%asset_attribute_link_relation%">%asset_name%</a></h3>
+            <p>%asset_metadata_CONTENT.Intro%</p>
+        </li>
+    %end_nested_get_list_template_key^eq:nav-block-with-text%
+    %begin_nested_get_list_template_key^eq:wide%
+        <li>
+            <h3><a href="%link_url%" rel="%asset_attribute_link_relation%">%asset_name%</a></h3>
+            <p>%asset_metadata_CONTENT.Intro%</p>
+        </li>
+    %end_nested_get_list_template_key^eq:wide%
+    %begin_nested_get_list_template_key^eq:narrow%
+        <li>
+            <h3><a href="%link_url%" rel="%asset_attribute_link_relation%">%asset_name%</a></h3>
+            <p>%asset_metadata_CONTENT.Intro%</p>
+        </li>
+    %end_nested_get_list_template_key^eq:narrow%    
+    %begin_nested_get_list_template_key^eq:stacked%
+        <li>
+            <h3><a href="%link_url%" rel="%asset_attribute_link_relation%">%asset_name%</a></h3>
+            <p>%asset_metadata_CONTENT.Intro%</p>
+        </li>
+    %end_nested_get_list_template_key^eq:stacked%
+%else_nested_get_list_template_value^contains:Nav%
+    <li>
+        %begin_nested_get_list_template_key^eq:hero-listing%
+        <a href="%link_url%" style="background-image:url(%begin_asset_thumbnail_v_large_url% %asset_thumbnail_v_large_url% %else_asset_thumbnail_v_large_url% %asset_thumbnail_url% %end_asset_thumbnail_v_large_url%)">
+          <div class="inner">
+        %else_nested_get_list_template_key^eq:hero-listing%
+        <a href="%link_url%" rel="%asset_attribute_link_relation%">
+          <figure>
+            <img alt="%asset_thumbnail_alt%" src="%begin_asset_thumbnail_v_medium_url% %asset_thumbnail_v_medium_url% %else_asset_thumbnail_v_medium_url% %asset_thumbnail_url% %end_asset_thumbnail_v_medium_url%" />
+          </figure>
+        %end_nested_get_list_template_key^eq:hero-listing%
+    
+          <strong role="heading">%asset_name%</strong>
+          %asset_metadata_CONTENT.Intro^tagif:p%
+          
+         %begin_nested_get_list_template_key^eq:hero-listing%
+         </div>
+         %end_nested_get_list_template_key^eq:hero-listing%
+          
+        </a>
+    </li>
+%end_nested_get_list_template_value^contains:Nav%

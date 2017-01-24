@@ -1,0 +1,8 @@
+/* set the main style for images here - easier if they are uniform size */
+
+/* show the metadata description cell because we have some notes here */
+.content-template-timeline .sortableFieldContainer .cellName {display: table-cell; width: 30px; padding-left: 25px;}
+.content-template-timeline .content-template .sortableFieldContainer {padding: 10px 0px 15px 0px}
+
+/* hide the content heading - not sure if we need this or not */ 
+.content-template-timeline .content-template .sortableFieldContainer .rowWithWYSIWYG .cellName {display: none;}

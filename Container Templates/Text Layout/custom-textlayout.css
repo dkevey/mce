@@ -1,0 +1,7 @@
+.content-template .select-thumb {width:470px; height:167px;}
+
+/* add the thumbnails - if the sizes are different, change them here */
+.select-thumb.selected-image-left {background-image: url(/?a=7375); background-size: 470px 167px;}
+.select-thumb.selected-image-right {background-image: url(/?a=7376); background-size: 470px 167px;}
+.select-thumb.selected-inset-left {background-image: url(/?a=7377); background-size: 470px 265px;}
+.select-thumb.selected-inset-right {background-image: url(/?a=7378); background-size: 470px 253px;}

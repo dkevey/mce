@@ -1,0 +1,7 @@
+/* generic style is defined in ContentTemplates.css */ 
+.content-template-navigation .content-template .select-thumb {width:350px; height:58px;}
+
+/* add the thumbnails - if the sizes are different, change them here */
+.content-template-navigation .select-thumb.selected-tabbed-nav {background-image: url(/?a=7046); background-size: 350px 58px;}
+.content-template-navigation .select-thumb.selected-inpage-nav {background-image: url(/?a=7045); background-size: 350px 73px; height: 73px;}
+.content-template-navigation .select-thumb.selected-sidebar-tabs {background-image: url(/?a=7043); background-size: 350px 87px; height: 87px;}

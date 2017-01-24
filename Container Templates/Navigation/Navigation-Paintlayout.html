@@ -1,0 +1,249 @@
+%begin_asset_metadata_type^eq:tabbed-nav%
+<!-- MCE: Listing content template version %globals_asset_version:843% -->
+<div class="tabbed-nav ct-navigation__%asset_metadata_authoring_type%_%asset_metadata_type%" data-tabbed="" id="nav">
+    <div class="full-width">
+        <nav class="desktop-nav" role="tablist">
+%end_asset_metadata_type^eq:tabbed-nav%
+
+%begin_asset_metadata_type^eq:inpage-nav%
+<!-- MCE: Listing content template version %globals_asset_version:843% -->
+<section class="ct-navigation__%asset_metadata_authoring_type%_%asset_metadata_type%">
+    <div class="tabbed" data-tabbed="true">
+        <nav role="tablist">
+%end_asset_metadata_type^eq:inpage-nav%
+    
+%begin_asset_metadata_type^eq:sidebar-tabs%
+<!-- MCE: Listing content template version %globals_asset_version:843% -->
+<div class="layout-sidebar sidebar-tabs ct-navigation__%asset_metadata_authoring_type%_%asset_metadata_type%">
+    <div class="aside layout-sidebar__side">
+        <div class="layout-sidebar__side__inner box">
+            %begin_asset_metadata_title%
+            <h2 class="subtitle">%asset_metadata_title%</h2>
+            %end_asset_metadata_title%
+
+            %asset_metadata_description^tag:p%
+            <ul class="sidebar-tabs__list">
+%end_asset_metadata_type^eq:sidebar-tabs%
+
+<!-- ======= BEGIN TABBED NAV SECTION ============= -->
+%begin_asset_metadata_authoring_type^eq:wysiwyg%
+
+    %begin_asset_metadata_type^eq:sidebar-tabs%
+    <ul class="sidebar-tabs__list">
+        <li>
+          <a aria-controls="side-1" class="sidebar-tabs__tab" href="#%asset_metadata_section_1_heading^striphtml^striphtml^preg_replace:3400^lowercase%" role="tab">%asset_metadata_section_1_heading%</a>
+        </li>
+        <li>
+          <a aria-controls="side-2" class="sidebar-tabs__tab" href="#%asset_metadata_section_2_heading^striphtml^striphtml^preg_replace:3400^lowercase%" role="tab">%asset_metadata_section_2_heading%</a>
+        </li>
+        %begin_asset_metadata_num_fields^gte:3%
+        <li>
+          <a aria-controls="side-3" class="sidebar-tabs__tab" href="#%asset_metadata_section_3_heading^striphtml^striphtml^preg_replace:3400^lowercase%" role="tab">%asset_metadata_section_3_heading%</a>
+        </li>
+        %end_asset_metadata_num_fields^gte:3%
+        %begin_asset_metadata_num_fields^gte:4%
+        <li>
+          <a aria-controls="side-4" class="sidebar-tabs__tab" href="#%asset_metadata_section_4_heading^striphtml^striphtml^preg_replace:3400^lowercase%" role="tab">%asset_metadata_section_4_heading%</a>
+        </li>
+        %end_asset_metadata_num_fields^gte:4%
+        %begin_asset_metadata_num_fields^gte:5%
+        <li>
+          <a aria-controls="side-5" class="sidebar-tabs__tab" href="#%asset_metadata_section_5_heading^striphtml^striphtml^preg_replace:3400^lowercase%" role="tab">%asset_metadata_section_5_heading%</a>
+        </li>
+        %end_asset_metadata_num_fields^gte:5%
+        %begin_asset_metadata_num_fields^gte:6%
+        <li>
+          <a aria-controls="side-6" class="sidebar-tabs__tab" href="#%asset_metadata_section_6_heading^striphtml^striphtml^preg_replace:3400^lowercase%" role="tab">%asset_metadata_section_6_heading%</a>
+        </li>
+        %end_asset_metadata_num_fields^gte:6%
+      </ul>
+
+    %else_asset_metadata_type^eq:sidebar-tabs%
+          <a href="#%asset_metadata_section_1_heading^striphtml^striphtml^preg_replace:3400^lowercase%" role="tab" %asset_metadata_default_selected^eq:1:data-current="true"%>
+            %asset_metadata_section_1_heading%
+          </a>
+          <a href="#%asset_metadata_section_2_heading^striphtml^preg_replace:3400^lowercase%" role="tab" %asset_metadata_default_selected^eq:2:data-current="true"%>
+            %asset_metadata_section_2_heading%
+          </a>
+        %begin_asset_metadata_num_fields^gte:3%
+          <a href="#%asset_metadata_section_3_heading^striphtml^preg_replace:3400^lowercase%" role="tab" %asset_metadata_default_selected^eq:3:data-current="true"%>
+            %asset_metadata_section_3_heading%
+          </a>
+        %end_asset_metadata_num_fields^gte:3%
+        %begin_asset_metadata_num_fields^gte:4%
+          <a href="#%asset_metadata_section_4_heading^striphtml^preg_replace:3400^lowercase%" role="tab" %asset_metadata_default_selected^eq:4:data-current="true"%>
+            %asset_metadata_section_4_heading%
+          </a>
+        %end_asset_metadata_num_fields^gte:4%
+        %begin_asset_metadata_num_fields^gte:5%
+          <a href="#%asset_metadata_section_5_heading^striphtml^preg_replace:3400^lowercase%" role="tab" %asset_metadata_default_selected^eq:5:data-current="true"%>
+            %asset_metadata_section_5_heading%
+          </a>
+        %end_asset_metadata_num_fields^gte:5%
+        %begin_asset_metadata_num_fields^gte:6%
+          <a href="#%asset_metadata_section_6_heading^striphtml^preg_replace:3400^lowercase%" role="tab" %asset_metadata_default_selected^eq:6:data-current="true"%>
+            %asset_metadata_section_6_heading%
+          </a>
+        %end_asset_metadata_num_fields^gte:6%
+    %end_asset_metadata_type^eq:sidebar-tabs%
+
+%end_asset_metadata_authoring_type^eq:wysiwyg%
+
+<!-- ======= INSERT NESTED ASSET  ======== -->
+             [insert tablisting]
+<!-- ======= INSERT NESTED ASSET  ======== -->
+
+%begin_asset_metadata_type^eq:tabbed-nav%
+    </nav>
+  </div><!--@@ /.full-width @@-->
+%end_asset_metadata_type^eq:tabbed-nav%
+
+%begin_asset_metadata_type^eq:inpage-nav%
+    </nav>
+%end_asset_metadata_type^eq:inpage-nav%
+
+%begin_asset_metadata_type^eq:sidebar-tabs%
+        </ul>
+    </div>
+  </div><!-- end tab side -->
+  <!-- start tab panels -->
+  <div class="layout-sidebar__main sidebar-tabs__panels">
+    <div class="layout-sidebar__main__inner box">
+%end_asset_metadata_type^eq:sidebar-tabs%
+
+
+<!-- =========== END TABLIST SECTION ======== -->
+%begin_asset_metadata_type^eq:tabbed-nav%
+    </nav>
+  </div><!--@@ /.full-width @@-->
+%end_asset_metadata_type^eq:tabbed-nav%
+
+%begin_asset_metadata_type^eq:inpage-nav%
+    </nav>
+%end_asset_metadata_type^eq:inpage-nav%
+
+%begin_asset_metadata_type^eq:sidebar-tabs%
+        </ul>
+    </div>
+  </div><!-- end tab side -->
+  <!-- start tab panels -->
+  <div class="layout-sidebar__main sidebar-tabs__panels">
+    <div class="layout-sidebar__main__inner box">
+%end_asset_metadata_type^eq:sidebar-tabs%
+
+
+<!-- =========== BEGIN TABPANELS SECTION ============= -->
+%begin_asset_metadata_authoring_type^eq:wysiwyg%
+    %begin_asset_metadata_type^eq:sidebar-tabs%
+    <!-- sidebar tabs panel -->
+    <div class="sidebar-tabs__panel box" id="%asset_metadata_section_1_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+        %asset_metadata_section_1_heading^tag:h2%
+        %asset_metadata_section_1_content%
+    </div>
+    <div class="sidebar-tabs__panel box" id="%asset_metadata_section_2_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+        %asset_metadata_section_2_heading^tag:h2%
+        %asset_metadata_section_2_content%
+    </div>
+    %begin_asset_metadata_num_fields^gte:3%
+    <div class="sidebar-tabs__panel box" id="%asset_metadata_section_3_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+        %asset_metadata_section_3_heading^tag:h2%
+        %asset_metadata_section_3_content%
+    </div>
+    %end_asset_metadata_num_fields^gte:3%
+    %begin_asset_metadata_num_fields^gte:4%
+    <div class="sidebar-tabs__panel box" id="%asset_metadata_section_4_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+        %asset_metadata_section_4_heading^tag:h2%
+        %asset_metadata_section_4_content%
+    </div>
+    %end_asset_metadata_num_fields^gte:4%
+    %begin_asset_metadata_num_fields^gte:5%
+    <div class="sidebar-tabs__panel box" id="%asset_metadata_section_5_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+        %asset_metadata_section_5_heading^tag:h2%
+        %asset_metadata_section_5_content%
+    </div>
+    %end_asset_metadata_num_fields^gte:5%
+    %begin_asset_metadata_num_fields^gte:6%
+    <div class="sidebar-tabs__panel box" id="%asset_metadata_section_6_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+        %asset_metadata_section_6_heading^tag:h2%
+        %asset_metadata_section_6_content%
+    </div>
+    %end_asset_metadata_num_fields^gte:6%
+
+    %else_begin_asset_metadata_type^eq:inpage-nav%
+    <!-- inpage tab panel -->
+          <div id="%asset_metadata_section_1_heading^striphtml^preg_replace:3400^lowercase%" class="tab" role="tabpanel">
+            %asset_metadata_section_1_content%
+          </div>
+          <div id="%asset_metadata_section_2_heading^striphtml^preg_replace:3400^lowercase%" class="tab" role="tabpanel">
+            %asset_metadata_section_2_content%
+          </div>
+        %begin_asset_metadata_num_fields^gte:3%
+          <div id="%asset_metadata_section_3_heading^striphtml^preg_replace:3400^lowercase%" class="tab" role="tabpanel">
+            %asset_metadata_section_3_content%
+          </div>
+        %end_asset_metadata_num_fields^gte:3%
+        %begin_asset_metadata_num_fields^gte:4%
+          <div id="%asset_metadata_section_4_heading^striphtml^preg_replace:3400^lowercase%" class="tab" role="tabpanel">
+            %asset_metadata_section_4_content%
+          </div>
+        %end_asset_metadata_num_fields^gte:4%
+        %begin_asset_metadata_num_fields^gte:5%
+          <div id="%asset_metadata_section_5_heading^striphtml^preg_replace:3400^lowercase%" class="tab" role="tabpanel">
+            %asset_metadata_section_5_content%
+          </div>
+        %end_asset_metadata_num_fields^gte:5%
+        %begin_asset_metadata_num_fields^gte:6%
+          <div id="%asset_metadata_section_6_heading^striphtml^preg_replace:3400^lowercase%" class="tab" role="tabpanel">
+            %asset_metadata_section_6_content%
+          </div>
+        %end_asset_metadata_num_fields^gte:6%
+        
+      %else_begin_asset_metadata_type^eq:tabbed-nav%
+      <!-- tabbed nab panel -->
+          <section id="%asset_metadata_section_1_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+            %asset_metadata_section_1_content%
+          </section>
+          <section id="%asset_metadata_section_2_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+            %asset_metadata_section_2_content%
+          </section>
+        %begin_asset_metadata_num_fields^gte:3%
+          <section id="%asset_metadata_section_3_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+            %asset_metadata_section_3_content%
+          </section>
+        %end_asset_metadata_num_fields^gte:3%
+        %begin_asset_metadata_num_fields^gte:4%
+          <section id="%asset_metadata_section_4_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+            %asset_metadata_section_4_content%
+          </section>
+        %end_asset_metadata_num_fields^gte:4%
+        %begin_asset_metadata_num_fields^gte:5%
+          <section id="%asset_metadata_section_5_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+            %asset_metadata_section_5_content%
+          </section>
+        %end_asset_metadata_num_fields^gte:5%
+        %begin_asset_metadata_num_fields^gte:6%
+          <section id="%asset_metadata_section_6_heading^striphtml^preg_replace:3400^lowercase%" role="tabpanel">
+            %asset_metadata_section_6_content%
+          </section>
+        %end_asset_metadata_num_fields^gte:6%
+        
+    %end_asset_metadata_type^eq:sidebar-tabs%
+%end_asset_metadata_authoring_type^eq:wysiwyg%
+
+<!-- ======= INSERT NESTED ASSET  ======== -->
+             [insert tabpanels]
+<!-- ======= END TABBED NAV ============== -->
+%begin_asset_metadata_type^eq:tabbed-nav%
+</div>
+%end_asset_metadata_type^eq:tabbed-nav%
+
+%begin_asset_metadata_type^eq:inpage-nav%
+    </div>
+</section>
+%end_asset_metadata_type^eq:inpage-nav%
+
+%begin_asset_metadata_type^eq:sidebar-tabs%
+        </div>
+    </div>
+</div>
+%end_asset_metadata_type^eq:sidebar-tabs% 

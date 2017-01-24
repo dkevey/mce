@@ -1,0 +1,23 @@
+<!-- MCE: Image Layout content template version %globals_asset_version:5920% -->
+%begin_asset_metadata_template_key^eq:full-width%
+<div class="with-figure ct-imagelayout-%asset_metadata_template%">
+    <figure class="full-width" role="group">
+        %asset_metadata_heading^tagif:h3%
+        <img alt="%asset_metadata_image^as_asset:asset_attribute_alt%" src="./?a=%asset_metadata_image^as_asset:asset_assetid%" /> %begin_asset_metadata_content%<figcaption>%asset_metadata_content%</figcaption>%end_asset_metadata_content%
+    </figure>
+</div>
+%end_asset_metadata_template_key^eq:full-width%
+
+%begin_asset_metadata_template_key^contains:fullwidth%
+<div class="fullwidth %begin_asset_metadata_template^contains:mid% mid-align %end_asset% ct-imagelayout-%asset_metadata_template%" style="background-image:url(./?a=%asset_metadata_image^as_asset:asset_assetid%)">
+  <section>
+     %begin_asset_metadata_template^eq:fullwidth-mid%
+        %begin_asset_metadata_heading%
+        <h2 class="title">%asset_metadata_heading%</h2>
+        %end_asset%
+     %end_asset%  
+     
+     %asset_metadata_content^tagif:p%
+  </section>
+</div>
+%end_asset_metadata_template_key^eq:fullwidth%

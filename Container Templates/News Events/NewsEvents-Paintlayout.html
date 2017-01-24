@@ -1,0 +1,61 @@
+<!-- MCE: News or Events content template version %globals_asset_version:5544% -->
+%begin_asset_metadata_asset_type^eq:news%
+<div class="ct-newsevents__news_%asset_metadata_news_template%"> 
+%else_asset_metadata_asset_type^eq:news%
+<div class="ct-newsevents__events_%asset_metadata_event_type%_block-listing">
+%end_asset_metadata_asset_type^eq:news%
+
+
+<section %asset_metadata_style^contains:alt^replace_keywords:eq:1:class="alt"% id="newsevents-%asset_assetid%">
+    %begin_asset_metadata_title%
+        <h2 class="title">%asset_metadata_title%</h2>
+    %end_asset_metadata_title% 
+%begin_asset_metadata_asset_type_key^eq:news%
+    <!--@@ display news @@-->
+    %begin_asset_metadata_news_template^eq:block-listing%    
+    <ul class="ctnewsevents block-listing" data-type="filter" data-paginate="%asset_metadata_number_assets^empty:12%" data-useButton="%asset_metadata_show_more_button%">
+    %else_asset_metadata_news_template^eq:block-listing% 
+        <div class="ctnewsevents news-index %asset_metadata_news_template^eq:news-listing-dense^replace_keywords:eq:1:dense%" data-type="filter" data-paginate="%asset_metadata_number_assets^empty:12%" data-useButton="%asset_metadata_show_more_button%">
+    %end_asset_metadata_news_template^eq:block-listing% 
+            %begin_asset_metadata_parent_id%
+                <!--@@ parent asset layout 5573 @@-->
+                %asset_contents_paint_5573%
+            %else_asset_metadata_parent_id%
+                <!--@@ no results page @@-->
+                 %globals_asset_contents_raw:5568%
+            %end_asset_metadata_parent_id%
+    %begin_asset_metadata_news_template^eq:block-listing%    
+    </ul>
+    %else_asset_metadata_news_template^eq:block-listing% 
+    </div>
+    %end_asset_metadata_news_template^eq:block-listing% 
+%else_asset_metadata_asset_type_key^eq:news%
+    <ul class="ctnewsevents block-listing" data-type="filter" data-paginate="%asset_metadata_number_assets^empty:12%" data-useButton="%asset_metadata_show_more_button%"> 
+     <!--@@ display events @@-->
+     %begin_asset_metadata_event_type^eq:upcoming%
+            %begin_asset_metadata_parent_id%
+                <!--@@ upcoming events parent asset listing 5605 @@-->
+                %asset_contents_paint_5605%
+            %else_asset_metadata_parent_id%
+                <!--@@ no results page @@-->
+                %globals_asset_contents_raw:5568%
+            %end_asset_metadata_parent_id%
+     %else_asset_metadata_event_type^eq:upcoming%
+            %begin_asset_metadata_parent_id%
+                <!--@@ past events parent asset listing 5637 @@-->
+                %asset_contents_paint_5637%
+            %else_asset_metadata_parent_id%
+                <!--@@ no results page @@-->
+                %globals_asset_contents_raw:5568%
+            %end_asset_metadata_parent_id%
+     %end_asset_metadata_event_type^eq:upcoming%
+%end_asset_metadata_asset_type_key^eq:news%        
+</section>
+
+<script src="./?a=5841"></script><!--@@ jquery 3.1.0 @@-->
+<script src="./?a=5675?v=%globals_asset_version:5675%"></script><!--@@ Button script @@-->
+<style>
+.uomcontent [role="main"] .ctnewsevents li.hidden-item, .uomcontent [role="main"] .ctnewsevents article.hidden-item {display: none;}
+</style>
+
+</div>

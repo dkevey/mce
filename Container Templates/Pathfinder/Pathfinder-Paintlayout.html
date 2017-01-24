@@ -1,0 +1,65 @@
+<!-- MCE: Pathfinder content template version %globals_asset_version:987% -->
+<div class="ct-pathfinder__%asset_metadata_template_key%">
+    
+%begin_asset_metadata_background%
+<section class="fullwidth short fixed-background" style="background-image:url(%asset_metadata_background^as_asset:asset_url%);">
+  %begin_asset_metadata_title%
+    <h1 class="title">
+      %asset_metadata_title%
+    </h1>
+  %end_asset_metadata_title%
+%end_asset_metadata_background%
+  <ul class="pathfinder-%asset_metadata_num_fields% %asset_metadata_template%">
+    <li>
+      <a href="%asset_metadata_section_1_asset^as_asset:asset_url%" %asset_metadata_featured_item^eq:1:class="featured":%>
+        <strong><span>%asset_metadata_section_1_heading^replace_keywords:empty:{asset_metadata_section_1_asset^as_asset:asset_short_name}%</span></strong>
+        %begin_asset_metadata_template_value^contains:Pathfinder%
+          %asset_metadata_section_1_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_1_asset^as_asset:asset_metadata_CONTENT.Intro}^contains:<p>::<p>% <!--@@ Add p tag if not present @@-->
+            %asset_metadata_section_1_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_1_asset^as_asset:asset_metadata_CONTENT.Intro}%
+          %asset_metadata_section_1_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_1_asset^as_asset:asset_metadata_CONTENT.Intro}^contains:</p>::</p>%
+          <span class="button-small brand">%asset_metadata_section_1_button^empty:Read more%</span>
+        %end_asset_metadata_template_value^contains:Pathfinder%
+      </a>
+    </li>
+    <li>
+      <a href="%asset_metadata_section_2_asset^as_asset:asset_url%" %asset_metadata_featured_item^eq:2:class="featured":%>
+        <strong><span>%asset_metadata_section_2_heading^replace_keywords:empty:{asset_metadata_section_2_asset^as_asset:asset_short_name}%</span></strong>
+        %begin_asset_metadata_template_value^contains:Pathfinder%
+          %asset_metadata_section_2_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_2_asset^as_asset:asset_metadata_CONTENT.Intro}^contains:<p>::<p>% <!--@@ Add p tag if not present @@-->
+            %asset_metadata_section_2_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_2_asset^as_asset:asset_metadata_CONTENT.Intro}%
+          %asset_metadata_section_2_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_2_asset^as_asset:asset_metadata_CONTENT.Intro}^contains:</p>::</p>%
+          <span class="button-small brand">%asset_metadata_section_2_button^empty:Read more%</span>
+        %end_asset_metadata_template_value^contains:Pathfinder%
+      </a>
+    </li>
+    %begin_asset_metadata_num_fields^gte:3%
+    <li>
+      <a href="%asset_metadata_section_3_asset^as_asset:asset_url%" %asset_metadata_featured_item^eq:3:class="featured":%>
+        <strong><span>%asset_metadata_section_3_heading^replace_keywords:empty:{asset_metadata_section_3_asset^as_asset:asset_short_name}%</span></strong>
+        %begin_asset_metadata_template_value^contains:Pathfinder%
+          %asset_metadata_section_3_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_3_asset^as_asset:asset_metadata_CONTENT.Intro}^contains:<p>::<p>% <!--@@ Add p tag if not present @@-->
+            %asset_metadata_section_3_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_3_asset^as_asset:asset_metadata_CONTENT.Intro}%
+          %asset_metadata_section_3_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_3_asset^as_asset:asset_metadata_CONTENT.Intro}^contains:</p>::</p>%
+          <span class="button-small brand">%asset_metadata_section_3_button^empty:Read more%</span>
+        %end_asset_metadata_template_value^contains:Pathfinder%
+      </a>
+    </li>
+    %end_asset_metadata_num_fields^gte:3%
+    %begin_asset_metadata_num_fields^gte:4%
+    <li>
+      <a href="%asset_metadata_section_4_asset^as_asset:asset_url%" %asset_metadata_featured_item^eq:4:class="featured":%>
+        <strong><span>%asset_metadata_section_4_heading^replace_keywords:empty:{asset_metadata_section_4_asset^as_asset:asset_short_name}%</span></strong>
+        %begin_asset_metadata_template_value^contains:Pathfinder%
+          %asset_metadata_section_4_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_4_asset^as_asset:asset_metadata_CONTENT.Intro}^contains:<p>::<p>% <!--@@ Add p tag if not present @@-->
+            %asset_metadata_section_4_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_4_asset^as_asset:asset_metadata_CONTENT.Intro}%
+          %asset_metadata_section_4_content^replace:<p><\/p>:^replace_keywords:empty:{asset_metadata_section_4_asset^as_asset:asset_metadata_CONTENT.Intro}^contains:</p>::</p>%
+          <span class="button-small brand">%asset_metadata_section_4_button^empty:Read more%</span>
+        %end_asset_metadata_template_value^contains:Pathfinder%
+      </a>
+    </li>
+    %end_asset_metadata_num_fields^gte:4%
+  </ul>
+%begin_asset_metadata_background%
+</section>
+%end_asset_metadata_background%
+</div>

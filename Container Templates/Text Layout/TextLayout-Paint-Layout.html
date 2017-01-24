@@ -1,0 +1,56 @@
+<!-- MCE: Text Layout content template version %globals_asset_version:5449% -->
+%begin_asset_metadata_template_value^contains:Two%
+<div class="ct-textlayout__%asset_metadata_template% %asset_metadata_style^contains:alt^replace_keywords:eq:1:alt%" id="%asset_assetid^as_asset:asset_name%">
+    <div class="half">
+    %begin_asset_metadata_template^contains:left%
+        <section class="tight">
+            <figure class="full-width">
+                <img alt="%asset_metadata_image^as_asset:asset_attribute_alt%" src="./?a=%asset_metadata_image^as_asset:asset_assetid%" />
+                %begin_asset_metadata_caption%<figcaption>%asset_metadata_caption%</figcaption>%end_asset_metadata_caption%
+            </figure>
+        </section>
+        <section>
+            %asset_metadata_heading^tagif:h2%
+
+            %asset_metadata_content%
+
+            %begin_asset_metadata_link%
+                <p><a class="button-hero" href="./?a=%asset_metadata_link^as_asset:asset_assetid%">%asset_metadata_button^empty:Read more%</a></p>
+            %end_asset_metadata_link%
+        </section>
+    %else_asset%
+         <section>
+            %asset_metadata_heading^tagif:h2%
+
+            %asset_metadata_content%
+
+            %begin_asset_metadata_link%
+                <p><a class="button-hero" href="./?a=%asset_metadata_link^as_asset:asset_assetid%">%asset_metadata_button^empty:Read more%</a></p>
+            %end_asset_metadata_link%
+        </section>
+        <section class="tight">
+           <figure class="full-width">
+                <img alt="%asset_metadata_image^as_asset:asset_attribute_alt%" src="./?a=%asset_metadata_image^as_asset:asset_assetid%" /> 
+                %begin_asset_metadata_caption%<figcaption>%asset_metadata_caption%</figcaption>%end_asset_metadata_caption%
+            </figure>
+        </section>
+    %end_asset%
+    </div>
+</div>
+%end_asset_metadata_template_value^contains:Two%
+
+%begin_asset_metadata_template_value^contains:Figure%
+<div class="ct-textlayout__%asset_metadata_template% %asset_metadata_style^contains:alt^replace_keywords:eq:1:alt%" id="%asset_assetid^as_asset:asset_name%">
+ <section class="with-figure">
+      <figure class="%asset_metadata_template_key%" role="group">
+        <img alt="%asset_metadata_image^as_asset:asset_attribute_alt%" src="./?a=%asset_metadata_image^as_asset:asset_assetid%" />%begin_asset_metadata_caption%<figcaption>%asset_metadata_caption%</figcaption>%end_asset_metadata_caption%
+      </figure>
+        %asset_metadata_heading^tagif:h2%
+        %asset_metadata_content%
+
+        %begin_asset_metadata_link%
+            <p><a class="button-hero" href="./?a=%asset_metadata_link^as_asset:asset_assetid%">%asset_metadata_button^empty:Read more%</a></p>
+        %end_asset_metadata_link%
+ </section>
+ </div>
+%end_asset_metadata_template_value^contains:Figure%

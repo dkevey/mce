@@ -1,0 +1,114 @@
+<!-- MCE: Listing content template version %globals_asset_version:1057% -->
+<div class="ct-listing__%asset_metadata_authoring_type%_%asset_metadata_template%  %asset_metadata_style^contains:alt^replace_keywords:eq:1:alt%">
+
+%begin_asset_metadata_template_key^eq:hero-listing%
+
+    %begin_asset_metadata_title%
+        <h1 class="aligned-title">%asset_metadata_title%</h1>
+    %end_asset_metadata_title%
+
+    %asset_metadata_description^tagif:p%
+
+    <ul class="%asset_metadata_template_key%">
+        %begin_asset_metadata_authoring_type^eq:parent%
+            %begin_asset_metadata_parent_id%
+                %asset_contents_paint_1087% <!--@@ Listing Parent Asset Layout @@-->
+            %else_asset_metadata_parent_id%
+                %globals_asset_contents_raw:1128% <!--@@ No root or children defined @@-->
+            %end_asset_metadata_parent_id%
+        %end_asset_metadata_authoring_type^eq:parent%
+        
+        %begin_asset_metadata_authoring_type^eq:selected-children%
+            %begin_asset_metadata_child_ids%
+                %asset_contents_paint_1077% <!--@@ Listing Child Asset List Layout @@-->
+            %else_asset_metadata_child_ids%
+                %globals_asset_contents_raw:1128% <!--@@ No root or children defined @@-->
+            %end_asset_metadata_child_ids%
+        %end_asset_metadata_authoring_type^eq:selected-children%
+    </ul>
+%else_asset_metadata_template_key^eq:hero-listing%
+
+    %begin_asset_metadata_template_value^contains:Nav%
+        %begin_asset_metadata_template_key^eq:nav-with-text%
+        <section class="navigation-text-listing">
+            
+            %asset_metadata_title^tagif:h1%
+            %asset_metadata_description^tagif:p%
+            
+            <ul>
+                %begin_asset_metadata_authoring_type^eq:parent%
+                    %begin_asset_metadata_parent_id%
+                        %asset_contents_paint_1087% <!--@@ Listing Parent Asset Layout @@-->
+                    %else_asset_metadata_parent_id%
+                        %globals_asset_contents_raw:1128% <!--@@ No root or children defined @@-->
+                    %end_asset_metadata_parent_id%
+                %end_asset_metadata_authoring_type^eq:parent%
+                
+                %begin_asset_metadata_authoring_type^eq:selected-children%
+                    %begin_asset_metadata_child_ids%
+                        %asset_contents_paint_1077% <!--@@ Listing Child Asset List Layout @@-->
+                    %else_asset_metadata_child_ids%
+                        %globals_asset_contents_raw:1128% <!--@@ No root or children defined @@-->
+                    %end_asset_metadata_child_ids%
+                %end_asset_metadata_authoring_type^eq:selected-children%
+            </ul>
+        </section>
+
+        %else_asset_metadata_template_key^eq:nav-with-text%
+        <section class="navigation-block-listing %asset_metadata_template_key^eq:stacked:stacked%">
+
+            %begin_asset_metadata_title%
+            <h1 class="aligned-title">%asset_metadata_title%</h1>
+            %end_asset_metadata_title%
+
+            %asset_metadata_description^tagif:p%
+
+                <ul class="%asset_metadata_template_key%">
+                    %begin_asset_metadata_authoring_type^eq:parent%
+                        %begin_asset_metadata_parent_id%
+                            %asset_contents_paint_1087% <!--@@ Listing Parent Asset Layout @@-->
+                        %else_asset_metadata_parent_id%
+                            %globals_asset_contents_raw:1128% <!--@@ No root or children defined @@-->
+                        %end_asset_metadata_parent_id%
+                    %end_asset_metadata_authoring_type^eq:parent%
+
+                    %begin_asset_metadata_authoring_type^eq:selected-children%
+                        %begin_asset_metadata_child_ids%
+                            %asset_contents_paint_1077% <!--@@ Listing Child Asset List Layout @@-->
+                        %else_asset_metadata_child_ids%
+                            %globals_asset_contents_raw:1128% <!--@@ No root or children defined @@-->
+                        %end_asset_metadata_child_ids%
+                    %end_asset_metadata_authoring_type^eq:selected-children%
+                </ul>
+        </section>
+        %end_asset_metadata_template_key^eq:nav-with-text%
+
+    %else_asset_metadata_template_value^contains:Nav%
+
+        %begin_asset_metadata_title%
+            <h2 class="title">%asset_metadata_title%</h2>
+        %end_asset_metadata_title%
+
+        %asset_metadata_description^tagif:p%
+
+        <ul class="%asset_metadata_template_key%">
+                %begin_asset_metadata_authoring_type^eq:parent%
+                    %begin_asset_metadata_parent_id%
+                        %asset_contents_paint_1087% <!--@@ Listing Parent Asset Layout @@-->
+                    %else_asset_metadata_parent_id%
+                        %globals_asset_contents_raw:1128% <!--@@ No root or children defined @@-->
+                    %end_asset_metadata_parent_id%
+                %end_asset_metadata_authoring_type^eq:parent%
+
+                %begin_asset_metadata_authoring_type^eq:selected-children%
+                    %begin_asset_metadata_child_ids%
+                        %asset_contents_paint_1077% <!--@@ Listing Child Asset List Layout @@-->
+                    %else_asset_metadata_child_ids%
+                        %globals_asset_contents_raw:1128% <!--@@ No root or children defined @@-->
+                    %end_asset_metadata_child_ids%
+                %end_asset_metadata_authoring_type^eq:selected-children%
+        </ul>
+    %end_asset_metadata_template_value^contains:Nav%
+%end_asset_metadata_template_key^eq:hero-listing%
+</div>
+<!-- // MCE: Listing container template end -->

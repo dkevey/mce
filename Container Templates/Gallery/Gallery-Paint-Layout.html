@@ -1,0 +1,14 @@
+<!-- MCE: Gallery content template version %globals_asset_version:1144% -->
+ %begin_asset_metadata_type^eq:image-gallery%
+    <section id="image-gallery%asset_assetid%" class="ct-gallery__popup %asset_metadata_style^contains:alt^replace_keywords:eq:1:alt%">
+        %asset_metadata_title^tagif:h2%
+         %asset_metadata_description^tagif:p%
+        %asset_contents_paint_3941%
+    </section>
+%else_asset_metadata_type^eq:image-gallery%
+    <section id="image-layout%asset_assetid%" class="ct-gallery__layout %asset_metadata_style^contains:alt^replace_keywords:eq:1:alt%">
+        %asset_metadata_title^tagif:h2%
+         %asset_metadata_description^tagif:p%
+        %asset_contents_paint_3966%
+    </section>
+%end_asset_metadata_type^eq:image-gallery%

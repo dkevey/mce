@@ -1,0 +1,97 @@
+/**********************************************************/
+/* Unimelb design system styles for use within the Edit+ interface - Sept 2016 */
+/**********************************************************/
+
+/* include the fonts - TODO:clean out the styles not needed */
+@font-face {font-family: 'Roboto'; font-style: normal; font-weight: 100; src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/vzIUHo9z-oJ4WgkpPOtg13YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+@font-face {font-family: 'Roboto'; font-style: normal; font-weight: 300; src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');}
+@font-face {font-family: 'Roboto'; font-style: normal; font-weight: 400; src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');}
+@font-face {font-family: 'Roboto'; font-style: normal; font-weight: 700; src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');}
+@font-face {font-family: 'Roboto'; font-style: italic; font-weight: 100; src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url(http://fonts.gstatic.com/s/roboto/v15/12mE4jfMSBTmg-81EiS-Yb3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');}
+@font-face {font-family: 'Roboto'; font-style: italic; font-weight: 300; src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at7rIa-7acMAeDBVuclsi6Gc.woff) format('woff');}
+@font-face {font-family: 'Roboto'; font-style: italic; font-weight: 400; src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v15/1pO9eUAp8pSF8VnRTP3xnnYhjbSpvc47ee6xR_80Hnw.woff) format('woff');}
+@font-face {font-family: 'Roboto'; font-style: italic; font-weight: 700; src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC7rIa-7acMAeDBVuclsi6Gc.woff) format('woff');}
+/* 
+#ees_screenContent .bodycopy_content_wrapper = content wrapper in Edit+
+*/
+
+/**********************************************************/
+/* Standard text variations                               */
+/**********************************************************/
+.plus .content_type_wysiwyg p, .plus .content_type_wysiwyg input[type="text"], .plus .content_type_wysiwyg textarea, .plus .content_type_wysiwyg ul, .plus .content_type_wysiwyg ol {font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 1em; font-weight: 300; letter-spacing: 0.0125rem; line-height: 1.68;}
+.plus .content_type_wysiwyg h1 {font-size: 2.0625rem; line-height: 3rem; padding-bottom:1.5rem; } 
+.plus .content_type_wysiwyg h2 {line-height:; 1.5rem; font-size: .9375rem; letter-spacing: .125rem; text-transform: uppercase; padding-bottom: 1.5rem; padding-top: 1.5rem;}
+.plus .content_type_wysiwyg h3 {font-size: 1rem; line-height: 1.5rem;}
+.plus .content_type_wysiwyg h4 {} 
+.plus .content_type_wysiwyg .title {text-align: center; }
+.plus .content_type_wysiwyg .title:after {width: 5rem; border-bottom: 2px solid #000; margin-top: 1.5rem; margin-left: auto; margin-right: auto; content: ''; display: block;}
+
+/* make text slighlty bigger in content templates viper wysiwyg area */
+.plus .content_type_wysiwyg .lead {font-size: 1.375rem; padding-top: 1.5rem; padding-bottom: 1.5rem; line-height: 2.25rem;}
+.plus .content_type_wysiwyg .lead+p:before {width: 5rem; border-top: 2px solid #000; margin-top: 1.875rem; margin-left: auto; margin-right: auto; content: ''; display: block; padding-bottom: 3rem;}
+.plus .content_type_wysiwyg ol.steps h2 {text-transform: none; font-size: 2.0625rem; line-height: 3rem;}
+.content_type_wysiwyg .viper__editable p, .content_type_wysiwyg input[type="text"], .content_type_wysiwyg textarea {font-size: 1.2em;}
+
+/**********************************************************/
+/* notices                                                */
+/**********************************************************/
+.plus .content_type_wysiwyg p.alert-success {background-color: #d2f1cf; color: #205a1a; padding: .9375rem;}
+.plus .content_type_wysiwyg p.alert-info {background-color: #e1eaf5; color: #234268; padding: .9375rem}
+.plus .content_type_wysiwyg p.alert-warning {background-color: #fffbcc; color: #807600; padding: .9375rem}
+.plus .content_type_wysiwyg p.alert-danger {background-color: #ea4f62; color: #fdeef0; padding: .9375rem}
+
+/**********************************************************/
+/* citation                                               */
+/**********************************************************/
+.plus .content_type_wysiwyg p.citation, .plus .content_type_wysiwyg li.citation {background-color: #f2f5f8; border: 1px solid #dbe3ec; font-family: Courier New,Courier,fixed; padding: .9375rem;}
+.plus .content_type_wysiwyg ul.citation-list {padding-left: 0; padding-right: 0;}
+
+/**********************************************************/
+/* other helpers                                          */
+/**********************************************************/
+/* when using modal we want to see where the content is and reducing images here so they fit on screen */
+.modal__dialog {border: 2px dashed #eee; margin-bottom: 20px; padding: 10px 20px;}
+.modal__dialog img {opacity: 0.8; width: 80%; margin:auto;}
+/* custom image outline */
+.plus .content_type_wysiwyg img.outline { border: solid 1px #eee;}
+
+/**********************************************************/
+/* Standard button variations                             */
+/**********************************************************/
+#ees_screenContent .bodycopy_content_wrapper a.button {border-radius: 0.3125rem; font-size: 0.8125rem; padding: 15px 20px; background-color: #0076de;
+    border: 0; border-bottom: 5px solid #005bab; color: #fff; cursor: pointer; display: inline-block; font-style: normal; font-weight: 700; letter-spacing: 2px; margin: 20px 0; text-align: center; text-decoration: none; text-transform: uppercase}
+
+#ees_screenContent .bodycopy_content_wrapper a.button-small{border-radius:5px; border-radius:0.3125rem; font-size:13px; font-size:0.8125rem; padding:15px 20px; padding: 0.9375rem 1.25rem; background-color:#0076de; border:0; border-bottom:5px solid #005bab; color:#fff; cursor:pointer; display:inline-block; font-style:normal; font-weight:700; letter-spacing:2px; margin:20px 0; text-align:center; text-decoration:none; text-transform:uppercase; border-radius:2px; border-radius:0.125rem; font-size:12px; font-size:0.75rem; padding:10px 15px; padding: 0.625rem 0.9375rem; border-bottom:0; margin:0; position:relative}
+
+.plus .content_type_wysiwyg a.button.warning:before,
+.plus .content_type_wysiwyg a.button-small.warning:before
+{display: none;}
+.plus .content_type_wysiwyg a.button.warning,
+.plus .content_type_wysiwyg a.button-small.warning
+{box-shadow: none;}
+
+#ees_screenContent .bodycopy_content_wrapper a.button:hover{border-bottom-width:1px;color:#fff;margin-top:24px}
+#ees_screenContent .bodycopy_content_wrapper a.button.warning{background-color:#df0620;border-bottom-color:#ad0519}
+#ees_screenContent .bodycopy_content_wrapper a.button.cta{background-color:#008a00;border-bottom-color:#005700}
+#ees_screenContent .bodycopy_content_wrapper a.button.brand{background-color:#004576;border-bottom-color:#002743}
+#ees_screenContent .bodycopy_content_wrapper a.button.soft{background-color:#e0e0e0;border-bottom-color:#c7c7c7;color:#366996}
+#ees_screenContent .bodycopy_content_wrapper a.button.soft:hover{background-color:#adb8c1;color:#004576}
+#ees_screenContent .bodycopy_content_wrapper a.button [data-icon]{margin-left:2px;margin-left:0.125rem;padding-bottom:3px;padding-bottom:0.1875rem;padding-top:1px;padding-top:0.0625rem}
+#ees_screenContent .bodycopy_content_wrapper a.button [data-icon].small{height:20px;height:1.25rem;width:20px;width:1.25rem}
+#ees_screenContent .bodycopy_content_wrapper a.button [data-icon].small .icon-over{height:20px;height:1.25rem;margin-left:-20px;margin-left:-1.25rem;margin-top:-20px;margin-top:-1.25rem;width:20px;width:1.25rem}
+#ees_screenContent .bodycopy_content_wrapper a.button-small:hover{border-bottom-width:1px;color:#fff;/*margin-top:24px;*/background-color:#005bab}
+#ees_screenContent .bodycopy_content_wrapper a.button-small:active{opacity:.3}
+#ees_screenContent .bodycopy_content_wrapper a.button-small.warning{background-color:#df0620;border-bottom-color:#ad0519}
+#ees_screenContent .bodycopy_content_wrapper a.button-small.warning:hover{background-color:#ad0519}
+#ees_screenContent .bodycopy_content_wrapper a.button-small.cta{background-color:#008a00;border-bottom-color:#005700}
+#ees_screenContent .bodycopy_content_wrapper a.button-small.cta:hover{background-color:#005700}
+#ees_screenContent .bodycopy_content_wrapper a.button-small.brand{background-color:#004576;border-bottom-color:#002743}
+#ees_screenContent .bodycopy_content_wrapper a.button-small.brand:hover{background-color:#002743}
+#ees_screenContent .bodycopy_content_wrapper a.button-small.soft{background-color:#e0e0e0;border-bottom-color:#c7c7c7;color:#366996}
+#ees_screenContent .bodycopy_content_wrapper a.button-small.soft:hover{background-color:#adb8c1;color:#004576}
+#ees_screenContent .bodycopy_content_wrapper a.button-small [data-icon]{margin-left:2px;margin-left:0.125rem;padding-bottom:3px;padding-bottom:0.1875rem;padding-top:1px;padding-top:0.0625rem}
+#ees_screenContent .bodycopy_content_wrapper a.button-small [data-icon].small{height:20px;height:1.25rem;width:20px;width:1.25rem}
+#ees_screenContent .bodycopy_content_wrapper a.button-small [data-icon].small .icon-over{height:20px;height:1.25rem;margin-left:-20px;margin-left:-1.25rem;margin-top:-20px;margin-top:-1.25rem;width:20px;width:1.25rem}
+#ees_screenContent .bodycopy_content_wrapper a.with-arrow::after{font-size:20px;font-size:1.25rem;padding-left:5px;padding-left:0.3125rem;content:'\2192';line-height:0}
+#ees_screenContent .bodycopy_content_wrapper a.with-arrow:after{font-size:20px;font-size:1.25rem;padding-left:5px;padding-left:0.3125rem;content:'\2192';line-height:0}

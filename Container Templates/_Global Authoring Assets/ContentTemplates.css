@@ -1,0 +1,68 @@
+/* 
+Content Container Templates Global Styles
+Version: 1.0
+Author: dkevey@unimelb.edu.au
+*/
+
+/*  ---------- generic styles that could be re-used  ---------- */
+
+/* style the intro section */
+.content-template h3 {padding: 0px 20px;}
+.content-template p.guide {padding: 0 20px}
+.content-template .notes {font-size: 12px; line-height: 14px; padding-top: 4px;}
+
+/* hide the section heading and description area */
+.content-template .schemaHeading_0, .content-template .sectionHeading_0, .content-template .sectionHeading_1 {display: none;}
+
+/* hide the default labels */
+.content-template .cellData .defaultLabel, .content-template .cellData .defaultCheckbox {display: none;}
+
+/* fix up the width on right hand column so select fields are closer */
+.content-template .cellData {width: 475px; padding: 10px 10px 10px 25px;}
+
+/* make the text inside the WYSIYWG areas bigger */
+.content-template .content_type_wysiwyg p, .content-template .content_type_wysiwyg input[type="text"], .content-template .content_type_wysiwyg textarea, .content-template .content_type_wysiwyg ul, .content-template .content_type_wysiwyg ol {font-size: 1.2em;}
+
+
+/* ---------- sortable content styling  ---------- */
+
+/* remove unneccessary borders on the table */
+.content-template td.sortable {border: none !important;}
+.content-template td.sortableGroups {border: none !important;}
+.content-template .sortable .row {border: 0px;}
+.content-template .sortableFieldContainer .row {border-bottom: none;}
+
+/* add a border between the sortable divs */
+.content-template .sortableFieldContainer {border-bottom: 1px dashed #ccc; position: relative;}
+
+/* position the drag handle  */
+.content-template .sortableFieldContainer .sortHandle {position: absolute; top: 30px; left: -8px;}
+.content-template .sortableFieldContainer .cellData input[type=text] {width: 100%;}
+.content-template .sortable .sortableFieldContainer .row:not(.rowWithWYSIWYG) .cellData {padding: 15px 0 5px 20px; background: none;}
+
+.content-template .sortableFieldContainer .rowWithWYSIWYG {padding-top: 15px;}
+.content-template .sortable .sortableFieldContainer .cellName {display: none;} 
+
+/* remove the heading and the content heading */ 
+.content-template .sortableFieldContainer .cellName {display:none}
+
+/* fix the styling of the cell data */
+.content-template .sortableFieldContainer .cellData {padding: 10px 10px 0px 20px; background-color: #fff;} 
+
+/* fix up the related asset icon so selections don't get hidden */
+.content-template .sortableGroups.ees_directChildrenList .sortableFieldContainer .assetIcon {margin: 0; background-position: 0 50%;}
+
+/* ---------- admin styling ------------------ */
+/* NOTE: backend CSS generally starts with .sq */
+
+.content-template .sq-backend-section-heading, .content-template .sq-metadata-default-wrapper, .content-template .sq-backend-section-subheading {display: none}
+
+/* fix up note alignment */
+.content-template .sq-metadata-description {padding-left: 0px; padding-top: 10px}
+
+/* make heading td narrower */
+.content-template .sq-backend-field {width: 10%; min-width: 100px;}
+
+/* ------- template thumbnails ----------------*/
+
+.content-template .select-thumb {display:block; margin-top:5px; margin-left: 0px; background-color: #FAFAFA; background-repeat: no-repeat; border: 1px solid #DFDFDF;}

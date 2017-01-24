@@ -1,0 +1,13 @@
+/* set the main style for images here - easier if they are uniform size */
+
+.content-template-pathfinder .content-template .select-thumb {width:400px; height:175px;}
+
+/* add the thumbnails and if the sizes are different change them here */
+.content-template-pathfinder .select-thumb.selected-blue  {background: url(/?a=6807:v1) no-repeat;}
+.content-template-pathfinder .select-thumb.selected-soft  {background: url(/?a=6808:v1) no-repeat;}
+.content-template-pathfinder .select-thumb.selected-white {background: url(/?a=6809:v1) no-repeat;}
+.content-template-pathfinder .select-thumb.selected-buttons {background: url(/?a=6810:v1) no-repeat; height: 86px;}
+
+/* show the metadata description cell because we have some notes here */
+.content-template-pathfinder .content-template .sortableFieldContainer .cellName {display: table-cell; padding-top: 0px;}
+.content-template-pathfinder .content-template .sortableFieldContainer {padding: 10px 0px 15px 0px}

@@ -1,0 +1,37 @@
+<!--@@
+    MCE Container Templates
+    Note when locks not acquired: Matrix will treat this section as normal content, and therefore strip out script tags (but not link tags).
+    @author dkevey@unimelb.edu.au based on Squiz templates
+    @requires Edit+ 5.3 or Matrix 5.3 Admin Interface
+    @imports jQuery 1.12 if not available
+    @imports jQuery.ui 1.12 if not available
+@@-->
+<script>
+    // Include jQuery and jQueryUI if not already loaded (Admin interface does not include them)
+    window.jQuery || document.write('<script src="//code.jquery.com/jquery-1.12.0.min.js"></'+'script>');
+    window.jQuery && window.jQuery.ui || document.write('<script src="//code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js"></'+'script>');
+</script>
+
+<!-- Global CSS -->
+<link rel="stylesheet" type="text/css" id="contentTemplates.css" href="./?a=6872?v=%globals_asset_version:6872%" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" type="text/css" id="custom-header.css" href="./?a=755?v=%globals_asset_version:755%" />
+
+<div class="content-template-header">
+    <div class="content-template">
+    <h3>%globals_asset_name:729%</h3>
+    <p class="guide">The header template should be used in the first container at the top of the page. Don't forget to select "custom layout" from the metadata screen. For help using this content container read the <a href="./?a=3682">header help guide</a></p>
+    %metadata-F_metadata_values%
+    </div>
+</div>
+
+<!--@@ Global Content Templates @@-->
+<script id="ContentTemplates.js">
+    %globals_asset_file_contents:781%
+</script>
+
+<!--@@ Custom Content Templates @@-->
+<script id="custom-header.js">
+    %globals_asset_file_contents:756%
+</script>
