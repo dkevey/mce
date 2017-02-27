@@ -1,5 +1,5 @@
 <!--
-MCE Container Templates - Gallery
+MCE Container Templates - Inpage Navigation
 @authors dcook@squiz.net, dkevey@unimelb.edu.au
 @requires Edit+ 5.3 or Matrix 5.3 Admin Interface
 @imports jQuery 1.12 if not available
@@ -14,12 +14,17 @@ MCE Container Templates - Gallery
 <!--@@ Global CSS @@-->
 <link rel="stylesheet" type="text/css" id="contentTemplates.css" href="./?a=6872?v=%globals_asset_version:6872%" />
 
-<div class="content-template-gallery">
+<div class="content-template-inpage-navigation">
     <div class="content-template">
-        <h3>%globals_asset_name:1144%</h3>
-        <p class="guide">For help using this content container read the <a href="./?a=1441">gallery help guide</a>.</p>
-        <p class="alert-warning"> Images must be <b>Live </b>to appear in your gallery.</p>
+        <h3>%globals_asset_name:8218%</h3>
+        <p class="guide">In-page navigation is useful for long text-heavy pages, providing a convenient way for users to see all sections at a glance and jump between them. For help using this template read the <a href="./?a=8235" target="_blank">in-page navigation help guide</a>.</p>
+         <p class="alert-info">NOTE: Do not use with Tabbed Navigation</p>
         <!-- Metadata fields entry -->
         %metadata-F_metadata_values%
     </div>
 </div>
+
+<!--@@ Global JS @@-->
+<script id="ContentTemplates.js">
+    %globals_asset_file_contents:781%
+</script>
