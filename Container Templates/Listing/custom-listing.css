@@ -1,16 +1,15 @@
 /* generic edit+ overrides */
-.content-template .select-thumb {width:344px; height:120px;}
-
+.content-template-listing .content-template .select-thumb {width:344px; height:120px;}
 
 /* add the thumbnails - if the sizes are different, change them here */
-.select-thumb.selected-listing {background-image: url(/?a=1141);  background-size: 344px 120px;}
-.select-thumb.selected-feature-listing-3 {background-image: url(/?a=1142); background-size: 344px 120px;}
-.select-thumb.selected-feature-listing {background-image: url(/?a=1143); background-size: 344px 120px;}
-.select-thumb.selected-hero-listing {background-image: url(/?a=1133); background-size: 344px 120px;}
-.select-thumb.selected-nav-with-text {background-image: url(/?a=1136); background-size: 344px 120px;}
-.select-thumb.selected-nav-linked-header {background-image: url(/?a=1139); background-size: 344px 120px;}
-.select-thumb.selected-nav-unlinked-header {background-image: url(/?a=1135); background-size: 344px 120px;}
-.select-thumb.selected-nav-block-with-text {background-image: url(/?a=1140); background-size: 344px 120px;}
-.select-thumb.selected-wide {background-image: url(/?a=1134); background-size: 344px 120px;}
-.select-thumb.selected-narrow {background-image: url(/?a=1138); background-size: 344px 120px;}
-.select-thumb.selected-stacked {background-image: url(/?a=1137); background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-listing {background-image: url(/?a=1141);  background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-feature-listing-3 {background-image: url(/?a=1142); background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-feature-listing {background-image: url(/?a=1143); background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-hero-listing {background-image: url(/?a=1133); background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-nav-with-text {background-image: url(/?a=1136); background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-nav-linked-header {background-image: url(/?a=1139); background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-nav-unlinked-header {background-image: url(/?a=1135); background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-nav-block-with-text {background-image: url(/?a=1140); background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-wide {background-image: url(/?a=1134); background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-narrow {background-image: url(/?a=1138); background-size: 344px 120px;}
+.content-template-listing .select-thumb.selected-stacked {background-image: url(/?a=1137); background-size: 344px 120px;}

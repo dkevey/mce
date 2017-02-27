@@ -112,6 +112,10 @@ if (!window[nam]) {
 
       };  populateTemplateThumbs();
 
+    // All those 'change's has caused EES to think we have unsaved changes when we don't.
+    // Actually todo: refactor thses event handlers to be named functions, and call the functions rather than trigger ui events
+    typeof EasyEditComponentsToolbar !== 'undefined' && EasyEditComponentsToolbar.disableSaveButton();
+
     }, //onScreenLoad()
 
   };
