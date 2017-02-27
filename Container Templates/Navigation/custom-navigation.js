@@ -78,10 +78,10 @@ if (!window[nam]) {
           $(this).toggle(authoring_type == 'wysiwyg');
         });
 
-        // folder show/hide
+        // parent show/hide
         $contentTemplate.find('[id$=_related_asset_848_ra_container]') //root_nodes
           .parents(ContentTemplates.rowSelector)
-          .toggle(authoring_type == 'folder');
+          .toggle(authoring_type == 'parent');
       }).trigger('change');
 
       // on change of num_fields
@@ -110,7 +110,7 @@ if (!window[nam]) {
           var $templateSelect = $('[id$="_metadata_field_select_846"]',parentScope);
 	  	  
 		  // define the rows you want to show and hide
-		  var $defaultTab = $('.section_0 .row_4',parentScope);
+		  //var $defaultTab = $('.section_0 .row_4',parentScope);
 		  var $sidebarTitle = $('.section_0 .row_5',parentScope);
 		  var $sidebarDescription = $('.section_0 .row_6',parentScope);
 		  
@@ -120,14 +120,12 @@ if (!window[nam]) {
 			   $templateSelect.val() === 'inpage-nav')
 			  
 			    {
-              	 // $defaultTab.show();
 				  $sidebarTitle.hide();
 				  $sidebarDescription.hide();
 				
 			 	} else if ($templateSelect.val() === 'sidebar-tabs')
 				
 				{
-				 // $defaultTab.hide();
 				  $sidebarTitle.show();
 				  $sidebarDescription.show();
               	} 
@@ -139,7 +137,6 @@ if (!window[nam]) {
              if  (evt.target.value === 'sidebar-tabs')
 
 				{
-				  //$defaultTab.hide();
                   $sidebarTitle.show();
 				  $sidebarDescription.show();
             
@@ -147,7 +144,6 @@ if (!window[nam]) {
 						 evt.target.value === 'inpage-nav' )
 
 				{
-			      //$defaultTab.show();
                   $sidebarTitle.hide();
 				  $sidebarDescription.hide();
               }
