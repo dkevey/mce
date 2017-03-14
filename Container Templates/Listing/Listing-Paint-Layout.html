@@ -1,6 +1,7 @@
 <!-- MCE: Listing content template version %globals_asset_version:1057% -->
 <div class="ct-listing__%asset_metadata_authoring_type%_%asset_metadata_template%  %asset_metadata_style^contains:alt^replace_keywords:eq:1:alt%">
 
+<!--@@ hero listing @@-->
 %begin_asset_metadata_template_key^eq:hero-listing%
 
     %begin_asset_metadata_title%
@@ -9,7 +10,7 @@
 
     %asset_metadata_description^tagif:p%
 
-    <ul class="%asset_metadata_template_key%">
+    <ul class="hero-listing">
         %begin_asset_metadata_authoring_type^eq:parent%
             %begin_asset_metadata_parent_id%
                 %asset_contents_paint_1087% <!--@@ Listing Parent Asset Layout @@-->
@@ -63,7 +64,7 @@
 
             %asset_metadata_description^tagif:p%
 
-                <ul class="%asset_metadata_template_key%">
+                <ul>
                     %begin_asset_metadata_authoring_type^eq:parent%
                         %begin_asset_metadata_parent_id%
                             %asset_contents_paint_1087% <!--@@ Listing Parent Asset Layout @@-->
@@ -84,14 +85,43 @@
         %end_asset_metadata_template_key^eq:nav-with-text%
 
     %else_asset_metadata_template_value^contains:Nav%
-
+  
+       
         %begin_asset_metadata_title%
             <h2 class="title">%asset_metadata_title%</h2>
         %end_asset_metadata_title%
 
         %asset_metadata_description^tagif:p%
-
-        <ul class="%asset_metadata_template_key%">
+        
+	  <!--@@ simple listing varities start @@-->
+      %begin_asset_metadata_template_key^eq:listing%
+       <ul class="simple-listing simple-listing--four">
+      %end_asset_metadata_template_key^eq:listing%
+      
+      %begin_asset_metadata_template_key^eq:feature-listing-3%
+       <ul class="simple-listing simple-listing--three">
+      %end_asset_metadata_template_key^eq:feature-listing-3%
+      
+      %begin_asset_metadata_template_key^eq:feature-listing%
+       <ul class="simple-listing simple-listing--two">
+      %end_asset_metadata_template_key^eq:feature-listing%
+      
+      %begin_asset_metadata_template_key^eq:nav-block-with-text%
+       <ul class="simple-listing simple-listing--text simple-listing--four">
+      %end_asset_metadata_template_key^eq:nav-block-with-text%
+      
+      %begin_asset_metadata_template_key^eq:wide%
+       <ul class="simple-listing simple-listing--text simple-listing--three">
+      %end_asset_metadata_template_key^eq:wide%
+      
+      %begin_asset_metadata_template_key^eq:narrow%
+       <ul class="simple-listing simple-listing--text simple-listing--two">
+      %end_asset_metadata_template_key^eq:narrow%
+      
+      %begin_asset_metadata_template_key^eq:stacked%
+       <ul class="simple-listing simple-listing--text simple-listing--one">
+      %end_asset_metadata_template_key^eq:stacked%
+      
                 %begin_asset_metadata_authoring_type^eq:parent%
                     %begin_asset_metadata_parent_id%
                         %asset_contents_paint_1087% <!--@@ Listing Parent Asset Layout @@-->
