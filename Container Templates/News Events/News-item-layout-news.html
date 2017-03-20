@@ -1,0 +1,64 @@
+    %begin_nested_get_template_key^eq:block-listing%
+        <!-- asset id: %asset_assetid% -->
+        <li class="news">
+            %begin_asset_thumbnail%
+            <a class="block-container" href="%asset_url%">
+                <div class="crop-height">
+                %begin_asset_thumbnail_v_medium% 
+                    <!-- asset thumbnail medium -->
+                    %asset_thumbnail_v_medium% 
+                    <img src="%asset_thumbnail_v_medium_url%" alt="%asset_thumbnail_alt%" title="%asset_thumbnail_title%">
+                %else_asset_thumbnail_v_medium% 
+                    <!-- asset thumbnail -->
+                    <img src="%asset_thumbnail_url%" alt="%asset_thumbnail_alt%" title="%asset_thumbnail_title%">
+                %end_asset_thumbnail_v_medium%
+                </div>
+            %else_asset_thumbnail%
+            <div class="block-container"> 
+                <a href="%asset_url%">
+                    <div class="top-unit">
+            %end_asset_thumbnail%
+                <strong>%asset_name%</strong>
+                <p>%asset_attribute_summary^striphtml%</p>
+                <div class="meta">
+                  <time class="meta-left" datetime="%asset_published_readabledate%">
+                    %asset_published_readabledate% 
+                  </time>
+                  <em class="meta-right">
+                      %begin_asset_metadata_TAG.Keyword% 
+                        %asset_metadata_TAG.Keyword% 
+                      %else_asset_metadata_TAG.Keyword% 
+                        News
+                      %end_asset_metadata_TAG.Keyword%
+                   </em>
+                   </div>
+            %begin_asset_thumbnail%      
+                </a>
+            %else_asset_thumbnail%
+                    </div>
+                </a> 
+            </div>
+            %end_asset_thumbnail%
+        </li>
+        %else_nested_get_template_key^eq:block-listing%
+        <article>
+            <a href="./?a=%asset_assetid%">
+                <!--@@ show the thumbnail if news-listing @@-->
+                %begin_nested_get_template_key^eq:news-listing%
+                    <!--@@ TODO: add image variety in here @@-->
+                    %begin_asset_thumbnail%
+                        <img alt="%asset_thumbnail_alt%" src="./?a=%asset_thumbnail_assetid%" />
+                    %end_asset_thumbnail%
+                %else_nested_get_template_key^eq:news-listing%
+                <!--@@ hide the thumbnail if news-listing-dense - because it looks funny @@-->    
+                %end_nested_get_template^eq:news-listing%
+              <p class="topic">
+                %asset_metadata_TAG.Keyword%
+              </p>
+              <h1>
+                %asset_short_name%
+              </h1>
+              %asset_attribute_summary% 
+            </a>
+        </article>
+        %end_nested_get_template_key^eq:block-listing%
