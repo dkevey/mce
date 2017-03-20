@@ -1,25 +1,15 @@
     %begin_nested_get_template_key^eq:block-listing%
         <!-- asset id: %asset_assetid% -->
         <li class="news">
-            %begin_asset_thumbnail%
-            <a class="block-container" href="%asset_url%">
+           <a class="block-container" href="%asset_url%">
+            	%begin_asset_thumbnail%        
                 <div class="crop-height">
-                %begin_asset_thumbnail_v_medium% 
-                    <!-- asset thumbnail medium -->
-                    %asset_thumbnail_v_medium% 
-                    <img src="%asset_thumbnail_v_medium_url%" alt="%asset_thumbnail_alt%" title="%asset_thumbnail_title%">
-                %else_asset_thumbnail_v_medium% 
                     <!-- asset thumbnail -->
-                    <img src="%asset_thumbnail_url%" alt="%asset_thumbnail_alt%" title="%asset_thumbnail_title%">
-                %end_asset_thumbnail_v_medium%
+                    <div class="block-listing__img" %begin_asset_thumbnail_v_medium% style="background-image: url(%asset_thumbnail_v_medium_url%);" %else_asset_thumbnail_v_medium% style="background-image: url(%asset_thumbnail_url%);" %end_asset_thumbnail_v_medium% ></div>                
                 </div>
-            %else_asset_thumbnail%
-            <div class="block-container"> 
-                <a href="%asset_url%">
-                    <div class="top-unit">
-            %end_asset_thumbnail%
+            	%end_asset_thumbnail%
                 <strong>%asset_name%</strong>
-                <p>%asset_attribute_summary^striphtml%</p>
+                %asset_attribute_summary^striphtml^tagif:p%
                 <div class="meta">
                   <time class="meta-left" datetime="%asset_published_readabledate%">
                     %asset_published_readabledate% 
@@ -31,14 +21,8 @@
                         News
                       %end_asset_metadata_TAG.Keyword%
                    </em>
-                   </div>
-            %begin_asset_thumbnail%      
-                </a>
-            %else_asset_thumbnail%
-                    </div>
-                </a> 
-            </div>
-            %end_asset_thumbnail%
+                </div>
+            </a>
         </li>
         %else_nested_get_template_key^eq:block-listing%
         <article>
